@@ -1,0 +1,28 @@
+INFO     2022-11-08 15:25:39,029 (resmonitor) Duration: 0.001s, MemUsage: 5.01M
+Verifying property:
+Forall(x_, (((-0.1 <= x_[(slice(None, None, None), 0)]) & (x_[(slice(None, None, None), 0)] <= -0.1) & (-0.1 <= x_[(slice(None, None, None), 1)]) & (x_[(slice(None, None, None), 1)] <= -0.1) & (0.1 <= x_[(slice(None, None, None), 2)]) & (x_[(slice(None, None, None), 2)] <= 0.1) & (0.09500000141561031 <= x_[(slice(None, None, None), 3)]) & (x_[(slice(None, None, None), 3)] <= 0.10500000156462193)) ==> (numpy.argmax(N(x_)) == numpy.argmax(N([-0.1 -0.1 0.1 0.1])))))
+
+Verifying Networks:
+N:
+Input_0                         : Input([-1  4], dtype=float32)
+MatMul_0                        : MatMul(Input_0, ndarray(shape=(4, 512)))
+Add_0                           : Add(MatMul_0, ndarray(shape=(512,)))
+Relu_0                          : Relu(Add_0)
+MatMul_1                        : MatMul(Relu_0, ndarray(shape=(512, 256)))
+Add_1                           : Add(MatMul_1, ndarray(shape=(256,)))
+Relu_1                          : Relu(Add_1)
+MatMul_2                        : MatMul(Relu_1, ndarray(shape=(256, 128)))
+Add_2                           : Add(MatMul_2, ndarray(shape=(128,)))
+Relu_2                          : Relu(Add_2)
+MatMul_3                        : MatMul(Relu_2, ndarray(shape=(128, 2)))
+Add_3                           : Add(MatMul_3, [0.1236446  0.18905775])
+
+INFO     2022-11-08 15:25:43,331 (dnnv.verifiers.common.reductions.iopolytope.reduction) CONJUNCTION: ((((1 * x_[(slice(None, None, None), 2)])) <= 0.10000000149011612) & (((-1 * x_[(slice(None, None, None), 2)])) <= -0.10000000149011612) & (((-1 * x_[(slice(None, None, None), 1)])) <= 0.10000000149011612) & (((-1 * x_[(slice(None, None, None), 0)])) <= 0.10000000149011612) & (((-1 * x_[(slice(None, None, None), 3)])) <= -0.09500000141561031) & (((1 * N(x_)[(0, 1)]) + (-1 * N(x_)[(0, 0)])) < 0) & (((1 * x_[(slice(None, None, None), 0)])) <= -0.10000000149011612) & (((1 * x_[(slice(None, None, None), 3)])) <= 0.10500000156462193) & (((1 * x_[(slice(None, None, None), 1)])) <= -0.10000000149011612))
+/bigtemp/ft8bn/dnnv_fork/.venv/lib/python3.9/site-packages/numpy/lib/npyio.py:528: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  arr = np.asanyarray(arr)
+INFO     2022-11-08 15:25:43,460 (dnnv.verifiers.common.executors.commandline) EXECUTING: nnenum /tmp/tmpls4o0eyd/tmpprwmoor9.onnx /tmp/tmpls4o0eyd/tmpvzektz39.npy -o /tmp/tmpls4o0eyd/tmp3x31zn5b.npy
+INFO     2022-11-08 15:25:44,036 (resmonitor) Duration: 5.017s, MemUsage: 356.90M
+dnnv.verifiers.nnenum
+  result: unsat
+  time: 2.1858
+INFO     2022-11-08 15:25:45,907 (resmonitor) Process finished successfully.

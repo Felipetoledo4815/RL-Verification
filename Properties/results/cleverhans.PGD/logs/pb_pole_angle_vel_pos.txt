@@ -1,0 +1,14 @@
+INFO     2022-11-08 15:50:24,151 (resmonitor) Duration: 0.001s, MemUsage: 5.89M
+Falsifying: Forall(x_, (((-10 <= x_[(slice(None, None, None), 0)]) & (x_[(slice(None, None, None), 0)] <= 10) & (0 <= x_[(slice(None, None, None), 1)]) & (x_[(slice(None, None, None), 1)] <= 0) & (0 <= x_[(slice(None, None, None), 2)]) & (x_[(slice(None, None, None), 2)] <= 0) & (0.5 <= x_[(slice(None, None, None), 3)]) & (x_[(slice(None, None, None), 3)] <= 2)) ==> (numpy.argmax(N(x_)) == 1)))
+
+INFO     2022-11-08 15:50:28,706 (dnnf.falsifier) Using cleverhans.PGD backend.
+INFO     2022-11-08 15:50:28,821 (dnnf.falsifier) Starting Falsifier
+INFO     2022-11-08 15:50:29,132 (dnnf.falsifier) FOUND COUNTEREXAMPLE
+INFO     2022-11-08 15:50:29,133 (dnnf.falsifier) FALSIFIED (cleverhans.PGD_0) at restart: 0
+INFO     2022-11-08 15:50:29,137 (dnnf.falsifier) falsification time: 0.3157
+dnnf
+  result: sat
+  falsification time: 0.3157
+  total time: 0.4313
+INFO     2022-11-08 15:50:29,149 (resmonitor) Duration: 5.008s, MemUsage: 431.38M
+INFO     2022-11-08 15:50:29,770 (resmonitor) Process finished successfully.

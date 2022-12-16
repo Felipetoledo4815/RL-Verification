@@ -1,0 +1,12 @@
+INFO     2022-11-08 15:26:17,877 (resmonitor) Duration: 0.001s, MemUsage: 5.28M
+INFO     2022-11-08 15:26:22,876 (resmonitor) Duration: 5.012s, MemUsage: 402.47M
+Falsifying: Forall(x_, ((((-0.1 - abs((-0.1 * (20.0 / 100)))) <= x_[(slice(None, None, None), 0)]) & (x_[(slice(None, None, None), 0)] <= (-0.1 + abs((-0.1 * (20.0 / 100))))) & (-0.1 <= x_[(slice(None, None, None), 1)]) & (x_[(slice(None, None, None), 1)] <= -0.1) & (0.1 <= x_[(slice(None, None, None), 2)]) & (x_[(slice(None, None, None), 2)] <= 0.1) & (0.1 <= x_[(slice(None, None, None), 3)]) & (x_[(slice(None, None, None), 3)] <= 0.1)) ==> (numpy.argmax(N(x_)) == numpy.argmax(N([-0.1 -0.1 0.1 0.1])))))
+
+INFO     2022-11-08 15:26:23,517 (dnnf.falsifier) Using cleverhans.BIM backend.
+INFO     2022-11-08 15:26:23,681 (dnnf.falsifier) Starting Falsifier
+INFO     2022-11-08 15:26:23,999 (dnnf.falsifier) falsification time: 0.3173
+dnnf
+  result: unknown
+  falsification time: 0.3173
+  total time: 0.4821
+INFO     2022-11-08 15:26:24,657 (resmonitor) Process finished successfully.

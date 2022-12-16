@@ -1,0 +1,141 @@
+INFO     2022-11-08 15:28:30,562 (resmonitor) Duration: 0.001s, MemUsage: 4.99M
+Verifying property:
+Forall(x_, (((-10 <= x_[(slice(None, None, None), 0)]) & (x_[(slice(None, None, None), 0)] <= 10) & (0 <= x_[(slice(None, None, None), 1)]) & (x_[(slice(None, None, None), 1)] <= 0) & (0 <= x_[(slice(None, None, None), 2)]) & (x_[(slice(None, None, None), 2)] <= 0) & (0.5 <= x_[(slice(None, None, None), 3)]) & (x_[(slice(None, None, None), 3)] <= 2)) ==> (numpy.argmax(N(x_)) == 1)))
+
+Verifying Networks:
+N:
+Input_0                         : Input([-1  4], dtype=float32)
+MatMul_0                        : MatMul(Input_0, ndarray(shape=(4, 512)))
+Add_0                           : Add(MatMul_0, ndarray(shape=(512,)))
+Relu_0                          : Relu(Add_0)
+MatMul_1                        : MatMul(Relu_0, ndarray(shape=(512, 256)))
+Add_1                           : Add(MatMul_1, ndarray(shape=(256,)))
+Relu_1                          : Relu(Add_1)
+MatMul_2                        : MatMul(Relu_1, ndarray(shape=(256, 128)))
+Add_2                           : Add(MatMul_2, ndarray(shape=(128,)))
+Relu_2                          : Relu(Add_2)
+MatMul_3                        : MatMul(Relu_2, ndarray(shape=(128, 2)))
+Add_3                           : Add(MatMul_3, [0.1236446  0.18905775])
+
+INFO     2022-11-08 15:28:35,122 (dnnv.verifiers.common.reductions.iopolytope.reduction) CONJUNCTION: ((((-1 * x_[(slice(None, None, None), 2)])) <= 0) & (((-1 * x_[(slice(None, None, None), 1)])) <= 0) & (((1 * x_[(slice(None, None, None), 1)])) <= 0) & (((1 * x_[(slice(None, None, None), 2)])) <= 0) & (((-1 * x_[(slice(None, None, None), 3)])) <= -0.5) & (((1 * x_[(slice(None, None, None), 3)])) <= 2) & (((1 * N(x_)[(0, 1)]) + (-1 * N(x_)[(0, 0)])) < 0) & (((-1 * x_[(slice(None, None, None), 0)])) <= 10) & (((1 * x_[(slice(None, None, None), 0)])) <= 10))
+INFO     2022-11-08 15:28:35,348 (dnnv.verifiers.common.executors.commandline) EXECUTING: neurify -n /tmp/tmpu7say3tc/tmpcs44oklr.nnet -x /tmp/tmpu7say3tc/tmpwlto5k5b.input -sl 0.000000000001 -I /tmp/tmpu7say3tc/tmp76i5v03s.interval -H /tmp/tmpu7say3tc/tmpx2bsqq2o.hpoly -v
+INFO     2022-11-08 15:28:35,556 (resmonitor) Duration: 5.005s, MemUsage: 313.44M
+INFO     2022-11-08 15:28:40,558 (resmonitor) Duration: 10.006s, MemUsage: 382.69M
+INFO     2022-11-08 15:28:45,559 (resmonitor) Duration: 15.008s, MemUsage: 484.73M
+INFO     2022-11-08 15:28:50,567 (resmonitor) Duration: 20.016s, MemUsage: 363.27M
+INFO     2022-11-08 15:28:55,578 (resmonitor) Duration: 25.027s, MemUsage: 400.29M
+INFO     2022-11-08 15:29:00,606 (resmonitor) Duration: 30.053s, MemUsage: 514.39M
+INFO     2022-11-08 15:29:05,607 (resmonitor) Duration: 35.054s, MemUsage: 406.56M
+INFO     2022-11-08 15:29:10,615 (resmonitor) Duration: 40.063s, MemUsage: 528.45M
+INFO     2022-11-08 15:29:15,616 (resmonitor) Duration: 45.065s, MemUsage: 346.08M
+INFO     2022-11-08 15:29:20,631 (resmonitor) Duration: 50.079s, MemUsage: 426.80M
+INFO     2022-11-08 15:29:25,639 (resmonitor) Duration: 55.086s, MemUsage: 555.14M
+INFO     2022-11-08 15:29:30,652 (resmonitor) Duration: 60.100s, MemUsage: 428.85M
+INFO     2022-11-08 15:29:35,657 (resmonitor) Duration: 65.105s, MemUsage: 563.81M
+INFO     2022-11-08 15:29:40,669 (resmonitor) Duration: 70.116s, MemUsage: 354.64M
+INFO     2022-11-08 15:29:45,684 (resmonitor) Duration: 75.131s, MemUsage: 426.05M
+INFO     2022-11-08 15:29:50,696 (resmonitor) Duration: 80.144s, MemUsage: 554.16M
+INFO     2022-11-08 15:29:55,700 (resmonitor) Duration: 85.148s, MemUsage: 513.92M
+INFO     2022-11-08 15:30:00,703 (resmonitor) Duration: 90.151s, MemUsage: 506.18M
+INFO     2022-11-08 15:30:05,704 (resmonitor) Duration: 95.151s, MemUsage: 390.90M
+INFO     2022-11-08 15:30:10,718 (resmonitor) Duration: 100.166s, MemUsage: 506.64M
+INFO     2022-11-08 15:30:15,730 (resmonitor) Duration: 105.178s, MemUsage: 537.82M
+INFO     2022-11-08 15:30:20,730 (resmonitor) Duration: 110.178s, MemUsage: 520.05M
+INFO     2022-11-08 15:30:25,740 (resmonitor) Duration: 115.181s, MemUsage: 345.01M
+INFO     2022-11-08 15:30:30,747 (resmonitor) Duration: 120.194s, MemUsage: 379.08M
+INFO     2022-11-08 15:30:35,760 (resmonitor) Duration: 125.207s, MemUsage: 457.19M
+INFO     2022-11-08 15:30:40,769 (resmonitor) Duration: 130.211s, MemUsage: 470.03M
+INFO     2022-11-08 15:30:45,783 (resmonitor) Duration: 135.226s, MemUsage: 389.65M
+INFO     2022-11-08 15:30:50,792 (resmonitor) Duration: 140.236s, MemUsage: 464.12M
+INFO     2022-11-08 15:30:55,797 (resmonitor) Duration: 145.245s, MemUsage: 452.62M
+INFO     2022-11-08 15:31:00,811 (resmonitor) Duration: 150.255s, MemUsage: 511.53M
+INFO     2022-11-08 15:31:05,815 (resmonitor) Duration: 155.263s, MemUsage: 527.13M
+INFO     2022-11-08 15:31:10,817 (resmonitor) Duration: 160.264s, MemUsage: 504.53M
+INFO     2022-11-08 15:31:15,829 (resmonitor) Duration: 165.273s, MemUsage: 386.26M
+INFO     2022-11-08 15:31:20,838 (resmonitor) Duration: 170.280s, MemUsage: 461.12M
+INFO     2022-11-08 15:31:25,849 (resmonitor) Duration: 175.291s, MemUsage: 566.20M
+INFO     2022-11-08 15:31:30,852 (resmonitor) Duration: 180.296s, MemUsage: 425.69M
+INFO     2022-11-08 15:31:35,858 (resmonitor) Duration: 185.303s, MemUsage: 526.59M
+INFO     2022-11-08 15:31:40,866 (resmonitor) Duration: 190.309s, MemUsage: 470.59M
+INFO     2022-11-08 15:31:45,872 (resmonitor) Duration: 195.315s, MemUsage: 438.37M
+INFO     2022-11-08 15:31:50,885 (resmonitor) Duration: 200.332s, MemUsage: 556.22M
+INFO     2022-11-08 15:31:55,899 (resmonitor) Duration: 205.345s, MemUsage: 534.16M
+INFO     2022-11-08 15:32:00,913 (resmonitor) Duration: 210.360s, MemUsage: 515.23M
+INFO     2022-11-08 15:32:05,923 (resmonitor) Duration: 215.365s, MemUsage: 476.36M
+INFO     2022-11-08 15:32:10,938 (resmonitor) Duration: 220.382s, MemUsage: 505.39M
+INFO     2022-11-08 15:32:15,959 (resmonitor) Duration: 225.400s, MemUsage: 507.81M
+INFO     2022-11-08 15:32:20,963 (resmonitor) Duration: 230.403s, MemUsage: 488.28M
+INFO     2022-11-08 15:32:25,977 (resmonitor) Duration: 235.417s, MemUsage: 377.82M
+INFO     2022-11-08 15:32:30,984 (resmonitor) Duration: 240.425s, MemUsage: 382.30M
+INFO     2022-11-08 15:32:35,985 (resmonitor) Duration: 245.432s, MemUsage: 462.22M
+INFO     2022-11-08 15:32:40,996 (resmonitor) Duration: 250.444s, MemUsage: 483.98M
+INFO     2022-11-08 15:32:46,019 (resmonitor) Duration: 255.460s, MemUsage: 568.99M
+INFO     2022-11-08 15:32:51,029 (resmonitor) Duration: 260.470s, MemUsage: 458.85M
+INFO     2022-11-08 15:32:56,024 (resmonitor) Duration: 265.472s, MemUsage: 504.41M
+INFO     2022-11-08 15:33:01,040 (resmonitor) Duration: 270.487s, MemUsage: 526.25M
+INFO     2022-11-08 15:33:06,052 (resmonitor) Duration: 275.491s, MemUsage: 509.86M
+INFO     2022-11-08 15:33:11,057 (resmonitor) Duration: 280.504s, MemUsage: 497.41M
+INFO     2022-11-08 15:33:16,058 (resmonitor) Duration: 285.506s, MemUsage: 548.65M
+INFO     2022-11-08 15:33:21,066 (resmonitor) Duration: 290.509s, MemUsage: 337.19M
+INFO     2022-11-08 15:33:26,075 (resmonitor) Duration: 295.521s, MemUsage: 400.79M
+INFO     2022-11-08 15:33:31,082 (resmonitor) Duration: 300.530s, MemUsage: 490.90M
+INFO     2022-11-08 15:33:36,100 (resmonitor) Duration: 305.540s, MemUsage: 455.93M
+INFO     2022-11-08 15:33:41,100 (resmonitor) Duration: 310.542s, MemUsage: 512.81M
+INFO     2022-11-08 15:33:46,107 (resmonitor) Duration: 315.554s, MemUsage: 558.53M
+INFO     2022-11-08 15:33:51,122 (resmonitor) Duration: 320.569s, MemUsage: 537.59M
+INFO     2022-11-08 15:33:56,134 (resmonitor) Duration: 325.577s, MemUsage: 565.46M
+INFO     2022-11-08 15:34:01,130 (resmonitor) Duration: 330.577s, MemUsage: 554.98M
+INFO     2022-11-08 15:34:06,143 (resmonitor) Duration: 335.584s, MemUsage: 566.05M
+INFO     2022-11-08 15:34:11,144 (resmonitor) Duration: 340.588s, MemUsage: 435.88M
+INFO     2022-11-08 15:34:16,150 (resmonitor) Duration: 345.594s, MemUsage: 364.50M
+INFO     2022-11-08 15:34:21,162 (resmonitor) Duration: 350.609s, MemUsage: 439.02M
+INFO     2022-11-08 15:34:26,168 (resmonitor) Duration: 355.615s, MemUsage: 566.62M
+INFO     2022-11-08 15:34:31,194 (resmonitor) Duration: 360.635s, MemUsage: 526.05M
+INFO     2022-11-08 15:34:36,201 (resmonitor) Duration: 365.646s, MemUsage: 409.74M
+INFO     2022-11-08 15:34:41,220 (resmonitor) Duration: 370.664s, MemUsage: 367.71M
+INFO     2022-11-08 15:34:46,217 (resmonitor) Duration: 375.665s, MemUsage: 441.49M
+INFO     2022-11-08 15:34:51,221 (resmonitor) Duration: 380.668s, MemUsage: 548.93M
+INFO     2022-11-08 15:34:56,232 (resmonitor) Duration: 385.674s, MemUsage: 547.79M
+INFO     2022-11-08 15:35:01,241 (resmonitor) Duration: 390.680s, MemUsage: 508.54M
+INFO     2022-11-08 15:35:06,258 (resmonitor) Duration: 395.699s, MemUsage: 560.37M
+INFO     2022-11-08 15:35:11,270 (resmonitor) Duration: 400.711s, MemUsage: 339.06M
+INFO     2022-11-08 15:35:16,280 (resmonitor) Duration: 405.726s, MemUsage: 403.34M
+INFO     2022-11-08 15:35:21,288 (resmonitor) Duration: 410.735s, MemUsage: 491.19M
+INFO     2022-11-08 15:35:26,291 (resmonitor) Duration: 415.738s, MemUsage: 521.09M
+INFO     2022-11-08 15:35:31,301 (resmonitor) Duration: 420.744s, MemUsage: 460.44M
+INFO     2022-11-08 15:35:36,299 (resmonitor) Duration: 425.746s, MemUsage: 478.36M
+INFO     2022-11-08 15:35:41,303 (resmonitor) Duration: 430.750s, MemUsage: 403.48M
+INFO     2022-11-08 15:35:46,313 (resmonitor) Duration: 435.760s, MemUsage: 372.59M
+INFO     2022-11-08 15:35:51,326 (resmonitor) Duration: 440.769s, MemUsage: 447.29M
+INFO     2022-11-08 15:35:56,334 (resmonitor) Duration: 445.782s, MemUsage: 515.99M
+INFO     2022-11-08 15:36:01,344 (resmonitor) Duration: 450.788s, MemUsage: 547.02M
+INFO     2022-11-08 15:36:06,364 (resmonitor) Duration: 455.805s, MemUsage: 550.28M
+INFO     2022-11-08 15:36:11,360 (resmonitor) Duration: 460.806s, MemUsage: 554.51M
+INFO     2022-11-08 15:36:16,369 (resmonitor) Duration: 465.813s, MemUsage: 562.89M
+INFO     2022-11-08 15:36:21,374 (resmonitor) Duration: 470.821s, MemUsage: 335.29M
+INFO     2022-11-08 15:36:26,398 (resmonitor) Duration: 475.839s, MemUsage: 391.24M
+INFO     2022-11-08 15:36:31,404 (resmonitor) Duration: 480.845s, MemUsage: 479.90M
+INFO     2022-11-08 15:36:36,409 (resmonitor) Duration: 485.849s, MemUsage: 437.78M
+INFO     2022-11-08 15:36:41,417 (resmonitor) Duration: 490.864s, MemUsage: 365.31M
+INFO     2022-11-08 15:36:46,424 (resmonitor) Duration: 495.871s, MemUsage: 438.44M
+INFO     2022-11-08 15:36:51,425 (resmonitor) Duration: 500.871s, MemUsage: 568.88M
+INFO     2022-11-08 15:36:56,442 (resmonitor) Duration: 505.887s, MemUsage: 500.02M
+INFO     2022-11-08 15:37:01,460 (resmonitor) Duration: 510.907s, MemUsage: 476.46M
+INFO     2022-11-08 15:37:06,473 (resmonitor) Duration: 515.915s, MemUsage: 480.14M
+INFO     2022-11-08 15:37:11,485 (resmonitor) Duration: 520.928s, MemUsage: 494.37M
+INFO     2022-11-08 15:37:16,494 (resmonitor) Duration: 525.936s, MemUsage: 450.27M
+INFO     2022-11-08 15:37:21,510 (resmonitor) Duration: 530.951s, MemUsage: 571.01M
+INFO     2022-11-08 15:37:26,506 (resmonitor) Duration: 535.954s, MemUsage: 503.30M
+INFO     2022-11-08 15:37:31,520 (resmonitor) Duration: 540.967s, MemUsage: 516.46M
+INFO     2022-11-08 15:37:36,548 (resmonitor) Duration: 545.980s, MemUsage: 519.18M
+INFO     2022-11-08 15:37:41,542 (resmonitor) Duration: 550.981s, MemUsage: 557.35M
+INFO     2022-11-08 15:37:46,555 (resmonitor) Duration: 555.996s, MemUsage: 383.47M
+INFO     2022-11-08 15:37:51,567 (resmonitor) Duration: 561.014s, MemUsage: 463.12M
+INFO     2022-11-08 15:37:56,588 (resmonitor) Duration: 566.029s, MemUsage: 491.40M
+INFO     2022-11-08 15:38:01,590 (resmonitor) Duration: 571.032s, MemUsage: 537.35M
+INFO     2022-11-08 15:38:06,601 (resmonitor) Duration: 576.042s, MemUsage: 352.44M
+INFO     2022-11-08 15:38:11,600 (resmonitor) Duration: 581.048s, MemUsage: 425.27M
+INFO     2022-11-08 15:38:16,607 (resmonitor) Duration: 586.053s, MemUsage: 534.06M
+INFO     2022-11-08 15:38:21,607 (resmonitor) Duration: 591.055s, MemUsage: 480.10M
+INFO     2022-11-08 15:38:26,620 (resmonitor) Duration: 596.062s, MemUsage: 505.05M
+ERROR    2022-11-08 15:38:30,580 (resmonitor) Timeout: 600.043 > 600.000

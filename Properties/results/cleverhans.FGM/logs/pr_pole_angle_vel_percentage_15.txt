@@ -1,0 +1,12 @@
+INFO     2022-11-08 15:28:59,245 (resmonitor) Duration: 0.001s, MemUsage: 5.00M
+Falsifying: Forall(x_, (((-0.1 <= x_[(slice(None, None, None), 0)]) & (x_[(slice(None, None, None), 0)] <= -0.1) & (-0.1 <= x_[(slice(None, None, None), 1)]) & (x_[(slice(None, None, None), 1)] <= -0.1) & (0.1 <= x_[(slice(None, None, None), 2)]) & (x_[(slice(None, None, None), 2)] <= 0.1) & ((0.1 - abs((0.1 * (15.0 / 100)))) <= x_[(slice(None, None, None), 3)]) & (x_[(slice(None, None, None), 3)] <= (0.1 + abs((0.1 * (15.0 / 100)))))) ==> (numpy.argmax(N(x_)) == numpy.argmax(N([-0.1 -0.1 0.1 0.1])))))
+
+INFO     2022-11-08 15:29:04,210 (dnnf.falsifier) Using cleverhans.FGM backend.
+INFO     2022-11-08 15:29:04,250 (resmonitor) Duration: 5.016s, MemUsage: 423.56M
+INFO     2022-11-08 15:29:04,359 (dnnf.falsifier) Starting Falsifier
+INFO     2022-11-08 15:29:04,481 (dnnf.falsifier) falsification time: 0.1220
+dnnf
+  result: unknown
+  falsification time: 0.1220
+  total time: 0.2717
+INFO     2022-11-08 15:29:05,120 (resmonitor) Process finished successfully.

@@ -1,0 +1,439 @@
+INFO     2022-11-08 16:10:36,341 (resmonitor) Duration: 0.001s, MemUsage: 5.01M
+INFO     2022-11-08 16:10:41,342 (resmonitor) Duration: 5.013s, MemUsage: 400.36M
+Falsifying: Forall(x_, (((-0.1 <= x_[(slice(None, None, None), 0)]) & (x_[(slice(None, None, None), 0)] <= -0.1) & (-0.1 <= x_[(slice(None, None, None), 1)]) & (x_[(slice(None, None, None), 1)] <= -0.1) & ((0.1 - abs((0.1 * (5.0 / 100)))) <= x_[(slice(None, None, None), 2)]) & (x_[(slice(None, None, None), 2)] <= (0.1 + abs((0.1 * (5.0 / 100))))) & (0.1 <= x_[(slice(None, None, None), 3)]) & (x_[(slice(None, None, None), 3)] <= 0.1)) ==> (numpy.argmax(N(x_)) == numpy.argmax(N([-0.1 -0.1 0.1 0.1])))))
+
+INFO     2022-11-08 16:10:42,131 (dnnf.falsifier) Using cleverhans.PGD backend.
+INFO     2022-11-08 16:10:42,253 (dnnf.falsifier) Starting Falsifier
+INFO     2022-11-08 16:10:44,255 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 10
+INFO     2022-11-08 16:10:46,187 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 20
+INFO     2022-11-08 16:10:46,352 (resmonitor) Duration: 10.022s, MemUsage: 430.08M
+INFO     2022-11-08 16:10:48,128 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 30
+INFO     2022-11-08 16:10:50,411 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 40
+INFO     2022-11-08 16:10:51,357 (resmonitor) Duration: 15.027s, MemUsage: 430.16M
+INFO     2022-11-08 16:10:52,532 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 50
+INFO     2022-11-08 16:10:54,758 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 60
+INFO     2022-11-08 16:10:56,362 (resmonitor) Duration: 20.032s, MemUsage: 430.26M
+INFO     2022-11-08 16:10:56,823 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 70
+INFO     2022-11-08 16:10:58,652 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 80
+INFO     2022-11-08 16:11:00,510 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 90
+INFO     2022-11-08 16:11:01,369 (resmonitor) Duration: 25.039s, MemUsage: 430.09M
+INFO     2022-11-08 16:11:02,358 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 100
+INFO     2022-11-08 16:11:04,252 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 110
+INFO     2022-11-08 16:11:06,127 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 120
+INFO     2022-11-08 16:11:06,380 (resmonitor) Duration: 30.050s, MemUsage: 430.24M
+INFO     2022-11-08 16:11:08,213 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 130
+INFO     2022-11-08 16:11:10,173 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 140
+INFO     2022-11-08 16:11:11,385 (resmonitor) Duration: 35.054s, MemUsage: 430.35M
+INFO     2022-11-08 16:11:12,018 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 150
+INFO     2022-11-08 16:11:13,852 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 160
+INFO     2022-11-08 16:11:15,757 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 170
+INFO     2022-11-08 16:11:16,393 (resmonitor) Duration: 40.064s, MemUsage: 430.27M
+INFO     2022-11-08 16:11:17,946 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 180
+INFO     2022-11-08 16:11:19,947 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 190
+INFO     2022-11-08 16:11:21,406 (resmonitor) Duration: 45.071s, MemUsage: 430.13M
+INFO     2022-11-08 16:11:21,858 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 200
+INFO     2022-11-08 16:11:23,693 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 210
+INFO     2022-11-08 16:11:25,609 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 220
+INFO     2022-11-08 16:11:26,410 (resmonitor) Duration: 50.080s, MemUsage: 430.22M
+INFO     2022-11-08 16:11:27,500 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 230
+INFO     2022-11-08 16:11:29,442 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 240
+INFO     2022-11-08 16:11:31,276 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 250
+INFO     2022-11-08 16:11:31,424 (resmonitor) Duration: 55.094s, MemUsage: 430.31M
+INFO     2022-11-08 16:11:33,213 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 260
+INFO     2022-11-08 16:11:35,046 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 270
+INFO     2022-11-08 16:11:36,427 (resmonitor) Duration: 60.097s, MemUsage: 430.29M
+INFO     2022-11-08 16:11:36,976 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 280
+INFO     2022-11-08 16:11:38,818 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 290
+INFO     2022-11-08 16:11:40,679 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 300
+INFO     2022-11-08 16:11:41,432 (resmonitor) Duration: 65.102s, MemUsage: 430.24M
+INFO     2022-11-08 16:11:42,509 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 310
+INFO     2022-11-08 16:11:44,388 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 320
+INFO     2022-11-08 16:11:46,254 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 330
+INFO     2022-11-08 16:11:46,444 (resmonitor) Duration: 70.114s, MemUsage: 430.26M
+INFO     2022-11-08 16:11:48,084 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 340
+INFO     2022-11-08 16:11:49,918 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 350
+INFO     2022-11-08 16:11:51,447 (resmonitor) Duration: 75.117s, MemUsage: 430.31M
+INFO     2022-11-08 16:11:51,802 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 360
+INFO     2022-11-08 16:11:53,706 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 370
+INFO     2022-11-08 16:11:55,579 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 380
+INFO     2022-11-08 16:11:56,460 (resmonitor) Duration: 80.127s, MemUsage: 430.25M
+INFO     2022-11-08 16:11:57,607 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 390
+INFO     2022-11-08 16:11:59,493 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 400
+INFO     2022-11-08 16:12:01,344 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 410
+INFO     2022-11-08 16:12:01,470 (resmonitor) Duration: 85.140s, MemUsage: 430.19M
+INFO     2022-11-08 16:12:03,175 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 420
+INFO     2022-11-08 16:12:05,168 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 430
+INFO     2022-11-08 16:12:06,471 (resmonitor) Duration: 90.141s, MemUsage: 430.31M
+INFO     2022-11-08 16:12:07,044 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 440
+INFO     2022-11-08 16:12:08,964 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 450
+INFO     2022-11-08 16:12:10,803 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 460
+INFO     2022-11-08 16:12:11,478 (resmonitor) Duration: 95.149s, MemUsage: 430.24M
+INFO     2022-11-08 16:12:12,734 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 470
+INFO     2022-11-08 16:12:14,562 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 480
+INFO     2022-11-08 16:12:16,486 (resmonitor) Duration: 100.156s, MemUsage: 430.45M
+INFO     2022-11-08 16:12:16,688 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 490
+INFO     2022-11-08 16:12:18,587 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 500
+INFO     2022-11-08 16:12:20,450 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 510
+INFO     2022-11-08 16:12:21,493 (resmonitor) Duration: 105.164s, MemUsage: 430.44M
+INFO     2022-11-08 16:12:22,358 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 520
+INFO     2022-11-08 16:12:24,225 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 530
+INFO     2022-11-08 16:12:26,066 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 540
+INFO     2022-11-08 16:12:26,500 (resmonitor) Duration: 110.170s, MemUsage: 430.28M
+INFO     2022-11-08 16:12:27,905 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 550
+INFO     2022-11-08 16:12:30,094 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 560
+INFO     2022-11-08 16:12:31,512 (resmonitor) Duration: 115.183s, MemUsage: 430.22M
+INFO     2022-11-08 16:12:32,210 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 570
+INFO     2022-11-08 16:12:34,036 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 580
+INFO     2022-11-08 16:12:35,966 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 590
+INFO     2022-11-08 16:12:36,518 (resmonitor) Duration: 120.188s, MemUsage: 430.24M
+INFO     2022-11-08 16:12:37,798 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 600
+INFO     2022-11-08 16:12:39,943 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 610
+INFO     2022-11-08 16:12:41,530 (resmonitor) Duration: 125.200s, MemUsage: 430.38M
+INFO     2022-11-08 16:12:42,188 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 620
+INFO     2022-11-08 16:12:44,038 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 630
+INFO     2022-11-08 16:12:45,887 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 640
+INFO     2022-11-08 16:12:46,531 (resmonitor) Duration: 130.202s, MemUsage: 430.28M
+INFO     2022-11-08 16:12:47,768 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 650
+INFO     2022-11-08 16:12:49,643 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 660
+INFO     2022-11-08 16:12:51,538 (resmonitor) Duration: 135.208s, MemUsage: 430.40M
+INFO     2022-11-08 16:12:51,593 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 670
+INFO     2022-11-08 16:12:53,507 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 680
+INFO     2022-11-08 16:12:55,338 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 690
+INFO     2022-11-08 16:12:56,547 (resmonitor) Duration: 140.218s, MemUsage: 430.42M
+INFO     2022-11-08 16:12:57,206 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 700
+INFO     2022-11-08 16:12:59,141 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 710
+INFO     2022-11-08 16:13:01,331 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 720
+INFO     2022-11-08 16:13:01,559 (resmonitor) Duration: 145.229s, MemUsage: 430.24M
+INFO     2022-11-08 16:13:03,184 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 730
+INFO     2022-11-08 16:13:05,040 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 740
+INFO     2022-11-08 16:13:06,570 (resmonitor) Duration: 150.240s, MemUsage: 430.38M
+INFO     2022-11-08 16:13:06,890 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 750
+INFO     2022-11-08 16:13:08,775 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 760
+INFO     2022-11-08 16:13:10,636 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 770
+INFO     2022-11-08 16:13:11,583 (resmonitor) Duration: 155.253s, MemUsage: 430.48M
+INFO     2022-11-08 16:13:12,461 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 780
+INFO     2022-11-08 16:13:14,288 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 790
+INFO     2022-11-08 16:13:16,240 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 800
+INFO     2022-11-08 16:13:16,584 (resmonitor) Duration: 160.254s, MemUsage: 430.35M
+INFO     2022-11-08 16:13:18,077 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 810
+INFO     2022-11-08 16:13:20,274 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 820
+INFO     2022-11-08 16:13:21,590 (resmonitor) Duration: 165.260s, MemUsage: 430.50M
+INFO     2022-11-08 16:13:22,150 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 830
+INFO     2022-11-08 16:13:23,997 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 840
+INFO     2022-11-08 16:13:26,038 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 850
+INFO     2022-11-08 16:13:26,600 (resmonitor) Duration: 170.270s, MemUsage: 430.57M
+INFO     2022-11-08 16:13:27,904 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 860
+INFO     2022-11-08 16:13:29,754 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 870
+INFO     2022-11-08 16:13:31,580 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 880
+INFO     2022-11-08 16:13:31,600 (resmonitor) Duration: 175.271s, MemUsage: 430.51M
+INFO     2022-11-08 16:13:33,437 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 890
+INFO     2022-11-08 16:13:35,282 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 900
+INFO     2022-11-08 16:13:36,613 (resmonitor) Duration: 180.283s, MemUsage: 430.42M
+INFO     2022-11-08 16:13:37,147 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 910
+INFO     2022-11-08 16:13:39,340 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 920
+INFO     2022-11-08 16:13:41,374 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 930
+INFO     2022-11-08 16:13:41,622 (resmonitor) Duration: 185.293s, MemUsage: 430.52M
+INFO     2022-11-08 16:13:43,313 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 940
+INFO     2022-11-08 16:13:45,509 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 950
+INFO     2022-11-08 16:13:46,626 (resmonitor) Duration: 190.296s, MemUsage: 430.52M
+INFO     2022-11-08 16:13:47,512 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 960
+INFO     2022-11-08 16:13:49,742 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 970
+INFO     2022-11-08 16:13:51,626 (resmonitor) Duration: 195.296s, MemUsage: 430.37M
+INFO     2022-11-08 16:13:51,740 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 980
+INFO     2022-11-08 16:13:53,630 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 990
+INFO     2022-11-08 16:13:55,465 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1000
+INFO     2022-11-08 16:13:56,632 (resmonitor) Duration: 200.303s, MemUsage: 430.51M
+INFO     2022-11-08 16:13:57,341 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1010
+INFO     2022-11-08 16:13:59,320 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1020
+INFO     2022-11-08 16:14:01,234 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1030
+INFO     2022-11-08 16:14:01,648 (resmonitor) Duration: 205.319s, MemUsage: 430.57M
+INFO     2022-11-08 16:14:03,058 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1040
+INFO     2022-11-08 16:14:04,908 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1050
+INFO     2022-11-08 16:14:06,650 (resmonitor) Duration: 210.320s, MemUsage: 430.43M
+INFO     2022-11-08 16:14:06,740 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1060
+INFO     2022-11-08 16:14:08,596 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1070
+INFO     2022-11-08 16:14:10,445 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1080
+INFO     2022-11-08 16:14:11,657 (resmonitor) Duration: 215.326s, MemUsage: 430.45M
+INFO     2022-11-08 16:14:12,320 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1090
+INFO     2022-11-08 16:14:14,164 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1100
+INFO     2022-11-08 16:14:16,080 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1110
+INFO     2022-11-08 16:14:16,662 (resmonitor) Duration: 220.332s, MemUsage: 430.45M
+INFO     2022-11-08 16:14:17,945 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1120
+INFO     2022-11-08 16:14:19,790 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1130
+INFO     2022-11-08 16:14:21,637 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1140
+INFO     2022-11-08 16:14:21,674 (resmonitor) Duration: 225.343s, MemUsage: 430.45M
+INFO     2022-11-08 16:14:23,490 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1150
+INFO     2022-11-08 16:14:25,362 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1160
+INFO     2022-11-08 16:14:26,678 (resmonitor) Duration: 230.347s, MemUsage: 430.65M
+INFO     2022-11-08 16:14:27,216 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1170
+INFO     2022-11-08 16:14:29,061 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1180
+INFO     2022-11-08 16:14:30,924 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1190
+INFO     2022-11-08 16:14:31,683 (resmonitor) Duration: 235.353s, MemUsage: 430.56M
+INFO     2022-11-08 16:14:32,805 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1200
+INFO     2022-11-08 16:14:34,660 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1210
+INFO     2022-11-08 16:14:36,515 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1220
+INFO     2022-11-08 16:14:36,697 (resmonitor) Duration: 240.367s, MemUsage: 430.50M
+INFO     2022-11-08 16:14:38,385 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1230
+INFO     2022-11-08 16:14:40,253 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1240
+INFO     2022-11-08 16:14:41,698 (resmonitor) Duration: 245.368s, MemUsage: 430.41M
+INFO     2022-11-08 16:14:42,113 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1250
+INFO     2022-11-08 16:14:43,997 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1260
+INFO     2022-11-08 16:14:45,836 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1270
+INFO     2022-11-08 16:14:46,705 (resmonitor) Duration: 250.375s, MemUsage: 430.54M
+INFO     2022-11-08 16:14:47,687 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1280
+INFO     2022-11-08 16:14:49,543 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1290
+INFO     2022-11-08 16:14:51,384 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1300
+INFO     2022-11-08 16:14:51,714 (resmonitor) Duration: 255.385s, MemUsage: 430.62M
+INFO     2022-11-08 16:14:53,267 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1310
+INFO     2022-11-08 16:14:55,108 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1320
+INFO     2022-11-08 16:14:56,721 (resmonitor) Duration: 260.391s, MemUsage: 430.51M
+INFO     2022-11-08 16:14:57,020 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1330
+INFO     2022-11-08 16:14:59,184 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1340
+INFO     2022-11-08 16:15:01,061 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1350
+INFO     2022-11-08 16:15:01,730 (resmonitor) Duration: 265.400s, MemUsage: 430.43M
+INFO     2022-11-08 16:15:02,921 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1360
+INFO     2022-11-08 16:15:04,833 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1370
+INFO     2022-11-08 16:15:06,732 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1380
+INFO     2022-11-08 16:15:06,741 (resmonitor) Duration: 270.408s, MemUsage: 430.48M
+INFO     2022-11-08 16:15:08,655 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1390
+INFO     2022-11-08 16:15:10,491 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1400
+INFO     2022-11-08 16:15:11,749 (resmonitor) Duration: 275.414s, MemUsage: 430.59M
+INFO     2022-11-08 16:15:12,345 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1410
+INFO     2022-11-08 16:15:14,204 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1420
+INFO     2022-11-08 16:15:16,072 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1430
+INFO     2022-11-08 16:15:16,749 (resmonitor) Duration: 280.419s, MemUsage: 430.54M
+INFO     2022-11-08 16:15:17,911 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1440
+INFO     2022-11-08 16:15:19,790 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1450
+INFO     2022-11-08 16:15:21,626 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1460
+INFO     2022-11-08 16:15:21,765 (resmonitor) Duration: 285.430s, MemUsage: 430.59M
+INFO     2022-11-08 16:15:23,529 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1470
+INFO     2022-11-08 16:15:25,402 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1480
+INFO     2022-11-08 16:15:26,771 (resmonitor) Duration: 290.440s, MemUsage: 430.57M
+INFO     2022-11-08 16:15:27,256 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1490
+INFO     2022-11-08 16:15:29,126 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1500
+INFO     2022-11-08 16:15:30,952 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1510
+INFO     2022-11-08 16:15:31,779 (resmonitor) Duration: 295.450s, MemUsage: 430.47M
+INFO     2022-11-08 16:15:32,824 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1520
+INFO     2022-11-08 16:15:34,685 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1530
+INFO     2022-11-08 16:15:36,591 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1540
+INFO     2022-11-08 16:15:36,788 (resmonitor) Duration: 300.458s, MemUsage: 430.65M
+INFO     2022-11-08 16:15:38,426 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1550
+INFO     2022-11-08 16:15:40,357 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1560
+INFO     2022-11-08 16:15:41,795 (resmonitor) Duration: 305.459s, MemUsage: 430.56M
+INFO     2022-11-08 16:15:42,230 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1570
+INFO     2022-11-08 16:15:44,077 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1580
+INFO     2022-11-08 16:15:45,957 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1590
+INFO     2022-11-08 16:15:46,799 (resmonitor) Duration: 310.468s, MemUsage: 430.66M
+INFO     2022-11-08 16:15:47,839 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1600
+INFO     2022-11-08 16:15:49,676 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1610
+INFO     2022-11-08 16:15:51,528 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1620
+INFO     2022-11-08 16:15:51,801 (resmonitor) Duration: 315.469s, MemUsage: 430.49M
+INFO     2022-11-08 16:15:53,425 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1630
+INFO     2022-11-08 16:15:55,302 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1640
+INFO     2022-11-08 16:15:56,824 (resmonitor) Duration: 320.494s, MemUsage: 430.67M
+INFO     2022-11-08 16:15:57,224 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1650
+INFO     2022-11-08 16:15:59,089 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1660
+INFO     2022-11-08 16:16:00,956 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1670
+INFO     2022-11-08 16:16:01,829 (resmonitor) Duration: 325.499s, MemUsage: 430.61M
+INFO     2022-11-08 16:16:02,816 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1680
+INFO     2022-11-08 16:16:04,682 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1690
+INFO     2022-11-08 16:16:06,543 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1700
+INFO     2022-11-08 16:16:06,841 (resmonitor) Duration: 330.504s, MemUsage: 430.83M
+INFO     2022-11-08 16:16:08,436 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1710
+INFO     2022-11-08 16:16:10,315 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1720
+INFO     2022-11-08 16:16:11,849 (resmonitor) Duration: 335.519s, MemUsage: 430.82M
+INFO     2022-11-08 16:16:12,143 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1730
+INFO     2022-11-08 16:16:14,015 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1740
+INFO     2022-11-08 16:16:15,857 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1750
+INFO     2022-11-08 16:16:16,855 (resmonitor) Duration: 340.523s, MemUsage: 430.72M
+INFO     2022-11-08 16:16:17,712 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1760
+INFO     2022-11-08 16:16:19,573 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1770
+INFO     2022-11-08 16:16:21,431 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1780
+INFO     2022-11-08 16:16:21,860 (resmonitor) Duration: 345.530s, MemUsage: 430.83M
+INFO     2022-11-08 16:16:23,262 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1790
+INFO     2022-11-08 16:16:25,144 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1800
+INFO     2022-11-08 16:16:26,876 (resmonitor) Duration: 350.541s, MemUsage: 430.84M
+INFO     2022-11-08 16:16:26,997 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1810
+INFO     2022-11-08 16:16:28,884 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1820
+INFO     2022-11-08 16:16:30,739 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1830
+INFO     2022-11-08 16:16:31,889 (resmonitor) Duration: 355.559s, MemUsage: 430.67M
+INFO     2022-11-08 16:16:32,613 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1840
+INFO     2022-11-08 16:16:34,471 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1850
+INFO     2022-11-08 16:16:36,347 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1860
+INFO     2022-11-08 16:16:36,900 (resmonitor) Duration: 360.570s, MemUsage: 430.74M
+INFO     2022-11-08 16:16:38,253 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1870
+INFO     2022-11-08 16:16:40,148 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1880
+INFO     2022-11-08 16:16:41,910 (resmonitor) Duration: 365.580s, MemUsage: 430.85M
+INFO     2022-11-08 16:16:42,019 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1890
+INFO     2022-11-08 16:16:43,862 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1900
+INFO     2022-11-08 16:16:45,734 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1910
+INFO     2022-11-08 16:16:46,931 (resmonitor) Duration: 370.599s, MemUsage: 430.80M
+INFO     2022-11-08 16:16:47,601 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1920
+INFO     2022-11-08 16:16:49,463 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1930
+INFO     2022-11-08 16:16:51,308 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1940
+INFO     2022-11-08 16:16:51,938 (resmonitor) Duration: 375.608s, MemUsage: 430.81M
+INFO     2022-11-08 16:16:53,182 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1950
+INFO     2022-11-08 16:16:55,040 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1960
+INFO     2022-11-08 16:16:56,868 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1970
+INFO     2022-11-08 16:16:56,951 (resmonitor) Duration: 380.616s, MemUsage: 430.67M
+INFO     2022-11-08 16:16:58,703 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1980
+INFO     2022-11-08 16:17:00,607 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 1990
+INFO     2022-11-08 16:17:01,949 (resmonitor) Duration: 385.619s, MemUsage: 430.74M
+INFO     2022-11-08 16:17:02,451 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2000
+INFO     2022-11-08 16:17:04,329 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2010
+INFO     2022-11-08 16:17:06,181 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2020
+INFO     2022-11-08 16:17:06,961 (resmonitor) Duration: 390.623s, MemUsage: 430.76M
+INFO     2022-11-08 16:17:08,085 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2030
+INFO     2022-11-08 16:17:09,938 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2040
+INFO     2022-11-08 16:17:11,818 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2050
+INFO     2022-11-08 16:17:11,954 (resmonitor) Duration: 395.624s, MemUsage: 430.71M
+INFO     2022-11-08 16:17:13,715 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2060
+INFO     2022-11-08 16:17:15,576 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2070
+INFO     2022-11-08 16:17:16,958 (resmonitor) Duration: 400.628s, MemUsage: 430.74M
+INFO     2022-11-08 16:17:17,435 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2080
+INFO     2022-11-08 16:17:19,292 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2090
+INFO     2022-11-08 16:17:21,167 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2100
+INFO     2022-11-08 16:17:21,961 (resmonitor) Duration: 405.631s, MemUsage: 430.77M
+INFO     2022-11-08 16:17:23,042 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2110
+INFO     2022-11-08 16:17:24,931 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2120
+INFO     2022-11-08 16:17:26,804 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2130
+INFO     2022-11-08 16:17:26,968 (resmonitor) Duration: 410.638s, MemUsage: 430.71M
+INFO     2022-11-08 16:17:28,655 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2140
+INFO     2022-11-08 16:17:30,479 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2150
+INFO     2022-11-08 16:17:31,988 (resmonitor) Duration: 415.656s, MemUsage: 430.93M
+INFO     2022-11-08 16:17:32,339 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2160
+INFO     2022-11-08 16:17:34,205 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2170
+INFO     2022-11-08 16:17:36,074 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2180
+INFO     2022-11-08 16:17:36,997 (resmonitor) Duration: 420.667s, MemUsage: 430.91M
+INFO     2022-11-08 16:17:37,952 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2190
+INFO     2022-11-08 16:17:39,822 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2200
+INFO     2022-11-08 16:17:41,650 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2210
+INFO     2022-11-08 16:17:42,011 (resmonitor) Duration: 425.675s, MemUsage: 430.71M
+INFO     2022-11-08 16:17:43,493 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2220
+INFO     2022-11-08 16:17:45,342 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2230
+INFO     2022-11-08 16:17:47,006 (resmonitor) Duration: 430.676s, MemUsage: 430.79M
+INFO     2022-11-08 16:17:47,188 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2240
+INFO     2022-11-08 16:17:49,073 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2250
+INFO     2022-11-08 16:17:50,901 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2260
+INFO     2022-11-08 16:17:52,010 (resmonitor) Duration: 435.679s, MemUsage: 430.85M
+INFO     2022-11-08 16:17:52,744 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2270
+INFO     2022-11-08 16:17:54,590 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2280
+INFO     2022-11-08 16:17:56,435 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2290
+INFO     2022-11-08 16:17:57,013 (resmonitor) Duration: 440.683s, MemUsage: 430.85M
+INFO     2022-11-08 16:17:58,265 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2300
+INFO     2022-11-08 16:18:00,125 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2310
+INFO     2022-11-08 16:18:01,984 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2320
+INFO     2022-11-08 16:18:02,023 (resmonitor) Duration: 445.693s, MemUsage: 430.98M
+INFO     2022-11-08 16:18:03,834 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2330
+INFO     2022-11-08 16:18:05,683 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2340
+INFO     2022-11-08 16:18:07,036 (resmonitor) Duration: 450.707s, MemUsage: 430.89M
+INFO     2022-11-08 16:18:07,533 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2350
+INFO     2022-11-08 16:18:09,419 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2360
+INFO     2022-11-08 16:18:11,343 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2370
+INFO     2022-11-08 16:18:12,045 (resmonitor) Duration: 455.715s, MemUsage: 431.03M
+INFO     2022-11-08 16:18:13,220 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2380
+INFO     2022-11-08 16:18:15,049 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2390
+INFO     2022-11-08 16:18:16,959 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2400
+INFO     2022-11-08 16:18:17,059 (resmonitor) Duration: 460.725s, MemUsage: 430.90M
+INFO     2022-11-08 16:18:18,806 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2410
+INFO     2022-11-08 16:18:20,703 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2420
+INFO     2022-11-08 16:18:22,066 (resmonitor) Duration: 465.736s, MemUsage: 431.09M
+INFO     2022-11-08 16:18:22,548 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2430
+INFO     2022-11-08 16:18:24,405 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2440
+INFO     2022-11-08 16:18:26,291 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2450
+INFO     2022-11-08 16:18:27,073 (resmonitor) Duration: 470.743s, MemUsage: 431.15M
+INFO     2022-11-08 16:18:28,149 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2460
+INFO     2022-11-08 16:18:30,009 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2470
+INFO     2022-11-08 16:18:31,870 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2480
+INFO     2022-11-08 16:18:32,074 (resmonitor) Duration: 475.744s, MemUsage: 431.12M
+INFO     2022-11-08 16:18:33,748 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2490
+INFO     2022-11-08 16:18:35,647 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2500
+INFO     2022-11-08 16:18:37,084 (resmonitor) Duration: 480.749s, MemUsage: 430.96M
+INFO     2022-11-08 16:18:37,561 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2510
+INFO     2022-11-08 16:18:39,425 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2520
+INFO     2022-11-08 16:18:41,258 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2530
+INFO     2022-11-08 16:18:42,097 (resmonitor) Duration: 485.763s, MemUsage: 430.90M
+INFO     2022-11-08 16:18:43,119 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2540
+INFO     2022-11-08 16:18:44,990 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2550
+INFO     2022-11-08 16:18:46,831 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2560
+INFO     2022-11-08 16:18:47,098 (resmonitor) Duration: 490.768s, MemUsage: 430.92M
+INFO     2022-11-08 16:18:48,747 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2570
+INFO     2022-11-08 16:18:50,598 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2580
+INFO     2022-11-08 16:18:52,104 (resmonitor) Duration: 495.774s, MemUsage: 431.03M
+INFO     2022-11-08 16:18:52,461 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2590
+INFO     2022-11-08 16:18:54,317 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2600
+INFO     2022-11-08 16:18:56,180 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2610
+INFO     2022-11-08 16:18:57,104 (resmonitor) Duration: 500.774s, MemUsage: 431.05M
+INFO     2022-11-08 16:18:58,037 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2620
+INFO     2022-11-08 16:18:59,891 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2630
+INFO     2022-11-08 16:19:01,748 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2640
+INFO     2022-11-08 16:19:02,113 (resmonitor) Duration: 505.782s, MemUsage: 431.08M
+INFO     2022-11-08 16:19:03,620 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2650
+INFO     2022-11-08 16:19:05,518 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2660
+INFO     2022-11-08 16:19:07,113 (resmonitor) Duration: 510.784s, MemUsage: 431.04M
+INFO     2022-11-08 16:19:07,404 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2670
+INFO     2022-11-08 16:19:09,292 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2680
+INFO     2022-11-08 16:19:11,156 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2690
+INFO     2022-11-08 16:19:12,137 (resmonitor) Duration: 515.802s, MemUsage: 430.90M
+INFO     2022-11-08 16:19:13,022 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2700
+INFO     2022-11-08 16:19:14,920 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2710
+INFO     2022-11-08 16:19:16,880 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2720
+INFO     2022-11-08 16:19:17,141 (resmonitor) Duration: 520.810s, MemUsage: 431.14M
+INFO     2022-11-08 16:19:18,911 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2730
+INFO     2022-11-08 16:19:20,902 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2740
+INFO     2022-11-08 16:19:22,164 (resmonitor) Duration: 525.828s, MemUsage: 431.13M
+INFO     2022-11-08 16:19:22,762 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2750
+INFO     2022-11-08 16:19:24,591 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2760
+INFO     2022-11-08 16:19:26,436 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2770
+INFO     2022-11-08 16:19:27,166 (resmonitor) Duration: 530.836s, MemUsage: 430.90M
+INFO     2022-11-08 16:19:28,345 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2780
+INFO     2022-11-08 16:19:30,208 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2790
+INFO     2022-11-08 16:19:32,142 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2800
+INFO     2022-11-08 16:19:32,173 (resmonitor) Duration: 535.843s, MemUsage: 430.90M
+INFO     2022-11-08 16:19:34,015 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2810
+INFO     2022-11-08 16:19:35,890 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2820
+INFO     2022-11-08 16:19:37,177 (resmonitor) Duration: 540.848s, MemUsage: 431.01M
+INFO     2022-11-08 16:19:37,747 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2830
+INFO     2022-11-08 16:19:39,608 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2840
+INFO     2022-11-08 16:19:41,489 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2850
+INFO     2022-11-08 16:19:42,183 (resmonitor) Duration: 545.852s, MemUsage: 431.16M
+INFO     2022-11-08 16:19:43,311 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2860
+INFO     2022-11-08 16:19:45,178 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2870
+INFO     2022-11-08 16:19:47,056 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2880
+INFO     2022-11-08 16:19:47,186 (resmonitor) Duration: 550.856s, MemUsage: 430.92M
+INFO     2022-11-08 16:19:48,929 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2890
+INFO     2022-11-08 16:19:50,787 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2900
+INFO     2022-11-08 16:19:52,192 (resmonitor) Duration: 555.857s, MemUsage: 431.03M
+INFO     2022-11-08 16:19:52,628 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2910
+INFO     2022-11-08 16:19:54,488 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2920
+INFO     2022-11-08 16:19:56,331 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2930
+INFO     2022-11-08 16:19:57,190 (resmonitor) Duration: 560.861s, MemUsage: 431.12M
+INFO     2022-11-08 16:19:58,164 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2940
+INFO     2022-11-08 16:20:00,072 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2950
+INFO     2022-11-08 16:20:01,921 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2960
+INFO     2022-11-08 16:20:02,208 (resmonitor) Duration: 565.873s, MemUsage: 431.00M
+INFO     2022-11-08 16:20:03,760 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2970
+INFO     2022-11-08 16:20:05,625 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2980
+INFO     2022-11-08 16:20:07,227 (resmonitor) Duration: 570.892s, MemUsage: 430.95M
+INFO     2022-11-08 16:20:07,495 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 2990
+INFO     2022-11-08 16:20:09,361 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3000
+INFO     2022-11-08 16:20:11,198 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3010
+INFO     2022-11-08 16:20:12,237 (resmonitor) Duration: 575.906s, MemUsage: 430.90M
+INFO     2022-11-08 16:20:13,049 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3020
+INFO     2022-11-08 16:20:14,890 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3030
+INFO     2022-11-08 16:20:16,770 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3040
+INFO     2022-11-08 16:20:17,244 (resmonitor) Duration: 580.914s, MemUsage: 430.97M
+INFO     2022-11-08 16:20:18,609 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3050
+INFO     2022-11-08 16:20:20,472 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3060
+INFO     2022-11-08 16:20:22,245 (resmonitor) Duration: 585.915s, MemUsage: 430.90M
+INFO     2022-11-08 16:20:22,316 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3070
+INFO     2022-11-08 16:20:24,241 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3080
+INFO     2022-11-08 16:20:26,099 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3090
+INFO     2022-11-08 16:20:27,254 (resmonitor) Duration: 590.922s, MemUsage: 431.01M
+INFO     2022-11-08 16:20:27,973 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3100
+INFO     2022-11-08 16:20:29,836 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3110
+INFO     2022-11-08 16:20:31,682 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3120
+INFO     2022-11-08 16:20:32,253 (resmonitor) Duration: 595.923s, MemUsage: 431.08M
+INFO     2022-11-08 16:20:33,535 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3130
+INFO     2022-11-08 16:20:35,364 (dnnf.falsifier) RESTART(cleverhans.PGD_0): 3140
+ERROR    2022-11-08 16:20:36,360 (resmonitor) Timeout: 600.044 > 600.000

@@ -1,0 +1,26 @@
+INFO     2022-11-08 15:39:30,649 (resmonitor) Duration: 0.001s, MemUsage: 4.19M
+Verifying property:
+Forall(x_, (((-0.11000000163912774 <= x_[(slice(None, None, None), 0)]) & (x_[(slice(None, None, None), 0)] <= -0.0900000013411045) & (-0.1 <= x_[(slice(None, None, None), 1)]) & (x_[(slice(None, None, None), 1)] <= -0.1) & (0.1 <= x_[(slice(None, None, None), 2)]) & (x_[(slice(None, None, None), 2)] <= 0.1) & (0.1 <= x_[(slice(None, None, None), 3)]) & (x_[(slice(None, None, None), 3)] <= 0.1)) ==> (numpy.argmax(N(x_)) == numpy.argmax(N([-0.1 -0.1 0.1 0.1])))))
+
+Verifying Networks:
+N:
+Input_0                         : Input([-1  4], dtype=float32)
+MatMul_0                        : MatMul(Input_0, ndarray(shape=(4, 512)))
+Add_0                           : Add(MatMul_0, ndarray(shape=(512,)))
+Relu_0                          : Relu(Add_0)
+MatMul_1                        : MatMul(Relu_0, ndarray(shape=(512, 256)))
+Add_1                           : Add(MatMul_1, ndarray(shape=(256,)))
+Relu_1                          : Relu(Add_1)
+MatMul_2                        : MatMul(Relu_1, ndarray(shape=(256, 128)))
+Add_2                           : Add(MatMul_2, ndarray(shape=(128,)))
+Relu_2                          : Relu(Add_2)
+MatMul_3                        : MatMul(Relu_2, ndarray(shape=(128, 2)))
+Add_3                           : Add(MatMul_3, [0.1236446  0.18905775])
+
+INFO     2022-11-08 15:39:35,593 (dnnv.verifiers.common.reductions.iopolytope.reduction) CONJUNCTION: ((((1 * N(x_)[(0, 1)]) + (-1 * N(x_)[(0, 0)])) < 0) & (((-1 * x_[(slice(None, None, None), 1)])) <= 0.10000000149011612) & (((1 * x_[(slice(None, None, None), 3)])) <= 0.10000000149011612) & (((-1 * x_[(slice(None, None, None), 3)])) <= -0.10000000149011612) & (((1 * x_[(slice(None, None, None), 0)])) <= -0.0900000013411045) & (((1 * x_[(slice(None, None, None), 1)])) <= -0.10000000149011612) & (((1 * x_[(slice(None, None, None), 2)])) <= 0.10000000149011612) & (((-1 * x_[(slice(None, None, None), 0)])) <= 0.11000000163912774) & (((-1 * x_[(slice(None, None, None), 2)])) <= -0.10000000149011612))
+INFO     2022-11-08 15:39:35,747 (resmonitor) Duration: 5.056s, MemUsage: 301.32M
+INFO     2022-11-08 15:39:35,946 (dnnv.verifiers.common.executors.commandline) EXECUTING: neurify -n /tmp/tmpuwzq158c/tmpqe24sbk5.nnet -x /tmp/tmpuwzq158c/tmp6j5iku84.input -sl 0.000000000001 -I /tmp/tmpuwzq158c/tmpmne7yjo5.interval -H /tmp/tmpuwzq158c/tmphp3s7lxo.hpoly -v
+dnnv.verifiers.neurify
+  result: unsat
+  time: 0.5565
+INFO     2022-11-08 15:39:36,580 (resmonitor) Process finished successfully.

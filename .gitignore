@@ -1,0 +1,4 @@
+sync_local_portal.sh
+sync_portal_local.sh
+env_req.yaml
+Properties/test.sh
