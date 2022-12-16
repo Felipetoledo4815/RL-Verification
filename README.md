@@ -6,6 +6,10 @@ You will need to create a conda environment and install all the packages defined
 
     conda create -n {environment-name} --file environment.yaml
 
+This environment will need to be activated and used when running the notebooks. The environment can be activated with the following command:
+
+    conda activate {environment-name}
+
 ## Install DNNV and DNNF
 You can execute the `install.sh` script in the root of the repository. It will create a **.venv** folder with a python environment, in which DNNV and DNNF will be installed. After that, it will install 4 verifiers: "neurify", "nnenum", "marabou", and "verinet"; and the "cleverhans" package.
 
